@@ -1,0 +1,35 @@
+# Bridgetown
+output
+.bridgetown-cache
+.bridgetown-metadata
+
+# Dependency folders
+node_modules
+bower_components
+vendor
+
+# Caches
+.sass-cache
+.npm
+.node_repl_history
+
+# Ruby
+Gemfile.lock
+
+# Bundler
+/.bundle
+
+# Mac Files
+.DS_Store
+
+# VSCode
+.vscode
+
+# Yarn
+yarn-error.log
+yarn-debug.log*
+.pnp/
+.pnp.js
+
+# Yarn Integrity file
+.yarn-integrity
