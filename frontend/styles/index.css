@@ -1,6 +1,6 @@
 body,
 html {
-  padding: 0;
+  padding: 10px;
   margin: 0 auto;
   color: #181a1b;
   max-width: 960px;
@@ -13,6 +13,11 @@ html {
   text-rendering: optimizeLegibility;
   font-family: AtlasGrotesk, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 h1 {
@@ -40,7 +45,6 @@ p {
 .header {
   display: flex;
   max-width: 920px;
-  padding-top: 20px;
   margin-bottom: 70px;
   align-items: center;
   flex-direction: row;
@@ -154,6 +158,94 @@ li {
   margin-bottom: 10px;
 }
 
+.projects {
+  gap: 30px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.projects li {
+  flex-basis: 48%;
+}
+
+.project {
+  height: 300px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  filter: brightness(95%);
+}
+
+.project-overlay {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  position: absolute;
+  border-radius: 8px;
+  background-color: #fff;
+  transform: translateY(100%);
+  transition: 0.2s ease-in-out;
+}
+
+.project:hover .project-overlay {
+  transform: translateY(0);
+}
+
+.project-header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 1.5em 2em;
+  background-color: #fff;
+  transform: translateY(-100%);
+  transition: 0.2s ease-in-out;
+  border-radius: 8px 0px 8px 8px;
+}
+
+.project-arc {
+  right: 0;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  bottom: 100%;
+  position: absolute;
+}
+
+.project-arc path {
+  fill: #fff;
+  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}
+
+.project:hover .project-header {
+  transform: translateY(0);
+}
+
+.project-title {
+  margin: 0;
+  font-size: 1.15em;
+  text-align: center;
+  font-family: "Calluna";
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.project-description {
+  margin: 0;
+  overflow: hidden;
+  padding: 0 2em 1.5em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
 footer {
   display: flex;
   font-size: 1em;
@@ -184,4 +276,27 @@ hr {
   border: none;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   margin: 3rem 0;
+}
+
+@media (max-width: 576px) {
+  .header {
+    text-align: center;
+    margin-bottom: 50px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  nav {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 788px) {
+  .project {
+    height: 280px;
+  }
+
+  .projects li {
+    flex-basis: 100%;
+  }
 }
