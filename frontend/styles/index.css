@@ -16,15 +16,19 @@ html {
 }
 
 a {
+  color: black;
   transition: all 0.2s;
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.5);
   -webkit-transition: all 0.2s;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 a:hover {
   color: #00e;
+}
+
+p {
+  line-height: 1.75em;
 }
 
 .header {
@@ -43,6 +47,14 @@ a:hover {
   gap: 1rem;
   display: flex;
   list-style-type: none;
+}
+
+.header nav ul li {
+  margin: 0 15px 0 0;
+}
+
+.header nav ul li:last-child {
+  margin: 0;
 }
 
 .nav-title {
@@ -65,11 +77,72 @@ a:hover {
   position: relative;
 }
 
+.page-title {
+  font-size: 26px;
+  line-height: 1.5;
+  font-family: "Calluna";
+}
+
+.wrapper {
+  display: flex;
+}
+
+.left {
+  width: 60%;
+  display: inline-block;
+  padding-right: 30px;
+}
+
+.right {
+  width: 40%;
+  display: inline-block;
+  padding-left: 30px;
+}
+
+.skills {
+  margin: 0;
+  display: flex;
+  font-size: 1em;
+  color: #134db6;
+  margin-bottom: 10px;
+  letter-spacing: 0.2em;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.icons i {
+  font-size: 25px;
+  margin-right: 15px;
+}
+
+.icons img {
+  width: 25px;
+  height: 25px;
+}
+
+.seagulls {
+  background-image: url("/images/seagulls.svg");
+  width: 266px;
+  height: 75px;
+  opacity: 5%;
+  display: block;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
 footer {
   display: flex;
   font-size: 1em;
   align-items: center;
   margin-bottom: 1rem;
+  justify-content: space-between;
 }
 
 footer ul {
@@ -80,7 +153,7 @@ footer ul {
   list-style-type: none;
 }
 
-footer ul li a {
+footer ul a {
   border: none;
 }
 
@@ -93,8 +166,4 @@ hr {
   border: none;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   margin: 3rem 0;
-}
-
-.muted {
-  color: rgba(0, 0, 0, 0.25);
 }
