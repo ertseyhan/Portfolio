@@ -25,7 +25,11 @@ Gemfile.lock
 # VSCode
 .vscode
 
+# NPM
+package-lock.json
+
 # Yarn
+yarn.lock
 yarn-error.log
 yarn-debug.log*
 .pnp/
