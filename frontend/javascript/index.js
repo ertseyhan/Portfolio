@@ -1,4 +1,5 @@
 import "index.css"
+import "fonts.css"
 import "syntax-highlighting.css"
 
 // Import all JavaScript & CSS files from src/_components
