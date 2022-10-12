@@ -26,12 +26,14 @@ Aşağıdaki resimde Steganografi işleminin tespit edilmesine yönelik yapılm�
 Sayısal resimler N satır ve M sütunluk bir dizi ile temsil edilir. Bir resim dizisinin elemanlarına piksel denir. En basit durumda pikseller 0 ve 1 değerini alırlar. Bu piksellerden oluşan resimlere ikili(binary) resim denir.
 
 ![](/images/2015/pixelarray.jpg)
+{:style="max-width: 600px;"}
 
 # En Önemsiz Bit (Least Significant Bit)
 
 Resim içerisinde veri gizlerken en çok kullanılan yöntem resmi oluşturan piksellerin en düşük anlamlı bitine veriyi gömmektir. Uygulaması çok basit olan bir yöntem olmasına karşın, dikkatsizce uygulanması durumunda veri kayıpları oluşabilir. Bu yöntem ile gizlenecek verinin her biti, resim verisinin bir baytının son bitine yazılır. Bu yöntemin en çok tercih edilen yöntemlerden biri olmasının sebebi en son bitte yapılan değişikliğin gözle görülür bi fark yaratmamasıdır. Bunun bir örneğini Github profilimde yer alan [Steg](https://github.com/ertseyhan/steg.git) projesini inceleyerek görebilirsiniz.
 
 ![](/images/2015/lsbits.jpg)
+{:style="max-width: 600px;"}
 
 <div class="post__sources" markdown="1">
 **Kaynaklar**  
