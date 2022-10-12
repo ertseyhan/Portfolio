@@ -6,11 +6,10 @@ title: Posts
 <ul>
   {% for post in collections.posts.resources %}
     <li>
-      <a href="{{ post.relative_url }}">{{ post.data.title }}</a>
+      <a style="border: none;" href="{{ post.relative_url }}">{{ post.data.title }}</a>
+      <span style="color: rgba(0,0,0,.4);"><i><small>{{ post.data.date | date: "%d %B, %Y" }}</small></i></span>
     </li>
   {% endfor %}
 </ul>
-
-If you have a lot of posts, you may want to consider adding [pagination](https://www.bridgetownrb.com/docs/content/pagination)!
 
 ---
