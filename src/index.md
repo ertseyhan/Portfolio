@@ -9,7 +9,7 @@ Asia Minor based Full-stack web developer candidate, currently studying at [Altc
 
 <div class="wrapper">
   <div class="left" markdown="1">
-  This portfolio site is a part of the Altcademy's Full-stack web development bootcamp. You can take a look at my projects at the [portfolio]({{ '/portfolio' | relative_url }}){:target="_blank"} page, check out my blog [posts]({{ '/posts' | relative_url }}) or [clone](https://github.com/ertseyhan/Portfolio){:target="_blank"} this site.
+  This portfolio site is a part of the Altcademy's Full-stack web development bootcamp. You can take a look at my projects at the [portfolio]({{ '/portfolio' | relative_url }}) page, check out my blog [posts]({{ '/posts' | relative_url }}) or [clone](https://github.com/ertseyhan/Portfolio){:target="_blank"} this site.
   {:style="margin: 0; margin-bottom: 10px;"}
 
   _Thanks for visiting!_
