@@ -254,6 +254,25 @@ li {
   color: rgba(0, 0, 0, 0.8);
 }
 
+.error-page {
+  width: 100%;
+  display: flex;
+  margin-bottom: 5em;
+  align-items: center;
+  flex-direction: column;
+}
+
+.error-page h1 {
+  font-family: "AtlasGrotesk";
+}
+
+.error-page h1,
+.error-page h2,
+.error-page p {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
 footer {
   display: flex;
   font-size: 1em;
