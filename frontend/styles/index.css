@@ -3,8 +3,8 @@ html {
   padding: 10px;
   margin: 0 auto;
   color: #181a1b;
-  overflow: hidden;
   max-width: 960px;
+  overflow-x: hidden;
   background: #f8f9fb;
 
   font-weight: 400;
