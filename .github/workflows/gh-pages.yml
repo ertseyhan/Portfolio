@@ -25,7 +25,7 @@ jobs:
       - run: yarn install
 
       - name: Build
-        run: bin/bridgetown deploy -e production
+        run: BRIDGETOWN_ENV=production bin/bridgetown deploy
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
